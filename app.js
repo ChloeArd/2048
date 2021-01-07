@@ -1,3 +1,7 @@
+let KEY_DOWN = 40;
+let KEY_UP = 38;
+let KEY_LEFT = 37;
+let KEY_RIGHT = 39;
 let score = 0;
 let cellGame = document.getElementsByClassName("cellGame");
 let findCell = cellGame[Math.floor(Math.random() * cellGame.length)];
@@ -15,4 +19,25 @@ function createTwo (){
 createTwo();
 findCell = cellGame[Math.floor(Math.random() * cellGame.length)];
 createTwo();
+
+for(const square of cellGame) {
+        square.addEventListener('keypress', function(event) {
+                switch (event.button) {
+                        case KEY_DOWN:
+
+                                break;
+
+                        case KEY_UP:
+
+                                break;
+                        case KEY_LEFT:
+
+                                break;
+
+                        case KEY_RIGHT:
+
+                                break;
+                }
+        });
+}
 
